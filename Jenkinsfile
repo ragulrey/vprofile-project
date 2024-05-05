@@ -32,7 +32,7 @@ pipeline {
         
         stage('BUILD'){
             steps {
-                sh 'mveen -s settings.xml -DskipTests install'
+                sh 'mvn -s settings.xml -DskipTests install'
             }
             post {
                 success {
